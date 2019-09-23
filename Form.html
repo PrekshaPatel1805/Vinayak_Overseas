@@ -1,0 +1,82 @@
+<!-- <html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+      $(function () {
+
+        $('#myForm').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: 'send_mail.php',
+            data: $('#myForm').serialize(),
+            success: function (data) {
+			  alert(data);
+              //alert('Your form has been submitted..Thank you');
+            }
+          });
+
+        });
+
+      });
+</script>
+</head>
+<body>
+          <form method="post" id="myForm">
+              <input type="text" name="Name" class="text" placeholder="Name" required>
+              <input type="email" name="Email" class="text" placeholder="Email" required>
+              <input type="text" name="Telephone" class="text" placeholder="Telephone" required>
+              <textarea name="Message" class="text" placeholder="Message" required></textarea>
+              <input type="text" class="text" name="Place" placeholder="Place" required>
+                    
+                    <div class='input-group date' id='datetimepicker6'>
+                        <input type='text' class="form-control" placeholder="Select your check in date" name="CheckIn" required>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+        
+                    <div class='input-group date' id='datetimepicker7'>
+                        <input type='text' class="form-control" name="CheckOut" placeholder="Select your check out date" required>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+       
+              <input type="number" class="text" name="Adults" min="0" placeholder="No. of Adults">
+              <input type="number" class="text" name="Child" min="0" placeholder="No. of Child" onChange="changeIt(this.value)">
+                              <div id="my_div"></div>
+              <input type="number" class="text" name="Rooms" min="0" placeholder="No. of Rooms">
+              <font color="#666666">Hotel Category : </font><input required class="rb-rating" type="text" class="text" value="" title="" name="Category">
+              <!-- <input type="text" name="Category" placeholder="Category"> -->
+              <!--<input type="submit" class="btn1" id="submitButton" value="Submit"/>
+            </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html >
+   <head>
+      <meta charset="UTF-8">
+      <title>App Login Concept</title>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js'></script>
+      <script src="js/loginPopUpindex.js"></script>
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+      <script src="js/index.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Comfortaa:400,700'>
+      <link rel="stylesheet" href="css/availableWorkeefier.css">
+      <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+      <script type="text/javascript">
+      
+</script>
+   </head>
+   <body>
+    <input type='button' id='btn'>
+   </body>
+</html>
